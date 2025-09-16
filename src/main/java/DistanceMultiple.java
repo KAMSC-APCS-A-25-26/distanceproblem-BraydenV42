@@ -26,14 +26,60 @@
  *
  */
 
-
 import java.util.Scanner;
 
+public class Main
+{
+    public static void main(String[] args)
+    {
+        // Create scanner
+        Scanner scanner = new Scanner(System.in);
 
-public class DistanceMultiple {
-    public static void main(String[] args) {
+        // Declare variables
+        String coordinate1, coordinate2, x1, x2, y1, y2;
+        int commaLoc, parenthese,  x, y, numRuns;
+        double distance;
 
+        // Prompt for number of runs
+        System.out.println("How many times do you want to run this program?");
+        numRuns = scanner.nextInt();
 
+        // Set up a loop
+        for(int i = 0; i < numRuns; i++)
+        {
+            // Prompt for coordinate one
+            System.out.println("What is the first coordinate?");
+            coordinate1 = scanner.next();
+
+            // Prompt for coordinate two
+            System.out.println("What is the second coordinate?");
+            coordinate2 = scanner.next();
+
+            // Find X1
+            commaLoc = coordinate1.indexOf(",");
+            parenthese = coordinate1.indexOf("(");
+            x1 = coordinate1.substring(parenthese + 1, commaLoc);
+
+            // Find Y1
+            commaLoc = coordinate1.indexOf(",");
+            parenthese = coordinate1.indexOf(")");
+            y1 = coordinate1.substring(commaLoc + 1, parenthese);
+
+            // Find X1
+            commaLoc = coordinate2.indexOf(",");
+            parenthese = coordinate2.indexOf("(");
+            x2 = coordinate2.substring(parenthese + 1, commaLoc);
+
+            // Find Y2
+            commaLoc = coordinate2.indexOf(",");
+            parenthese = coordinate2.indexOf(")");
+            y2 = coordinate2.substring(commaLoc + 1, parenthese);
+
+            // Find the distance between the two coordinates
+            x = Integer.parseInt(x2) - Integer.parseInt(x1);
+            y = Integer.parseInt(y2) - Integer.parseInt(y1);
+            distance = Math.sqrt( Math.pow(x, 2) + Math.pow(y, 2));
+            System.out.println("The distance between the two points is " + distance + ".");
+        }
     }
-
 }
