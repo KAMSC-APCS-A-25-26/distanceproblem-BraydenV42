@@ -47,12 +47,9 @@ public class DistanceMultiple
         // Set up a loop
         for(int i = 0; i < numRuns; i++)
         {
-            // Prompt for coordinate one
-            System.out.println("What is the first coordinate?");
+            // Prompt for coordinate
+            System.out.println("What are the coordinates?");
             coordinate1 = scanner.next();
-
-            // Prompt for coordinate two
-            System.out.println("What is the second coordinate?");
             coordinate2 = scanner.next();
 
             // Find X1
