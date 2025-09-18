@@ -38,7 +38,7 @@ public class Main
         // Declare variables
         String coordinate1, coordinate2, x1, x2, y1, y2;
         int commaLoc, parenthese,  x, y, numRuns;
-        double distance;
+        double distances;
 
         // Prompt for number of runs
         System.out.println("How many times do you want to run this program?");
@@ -75,8 +75,8 @@ public class Main
             // Find the distance between the two coordinates
             x = Integer.parseInt(x2) - Integer.parseInt(x1);
             y = Integer.parseInt(y2) - Integer.parseInt(y1);
-            distance = Math.sqrt( Math.pow(Integer.parseInt(x2) - Integer.parseInt(x1), 2) + Math.pow(Integer.parseInt(y2) - Integer.parseInt(y1), 2));
-            System.out.println("Your output was:\n " + distance);
+            distances = Math.sqrt( Math.pow(Integer.parseInt(x2) - Integer.parseInt(x1), 2) + Math.pow(Integer.parseInt(y2) - Integer.parseInt(y1), 2));
+            System.out.println("Your output was:\n " + distances);
         }
     }
 }
