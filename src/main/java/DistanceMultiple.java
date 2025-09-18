@@ -28,7 +28,7 @@
 
 import java.util.Scanner;
 
-public class DistanceMultiple
+public class Main
 {
     public static void main(String[] args)
     {
@@ -76,7 +76,7 @@ public class DistanceMultiple
             x = Integer.parseInt(x2) - Integer.parseInt(x1);
             y = Integer.parseInt(y2) - Integer.parseInt(y1);
             distance = Math.sqrt( Math.pow(x, 2) + Math.pow(y, 2));
-            System.out.println("The distance between the two points is " + distance + ".");
+            System.out.println("Found distance " + distance + ".");
         }
     }
 }
