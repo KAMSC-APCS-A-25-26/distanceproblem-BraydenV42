@@ -28,7 +28,7 @@
 
 import java.util.Scanner;
 
-public class DistanceMultiple
+public class DistanceProblem
 {
     public static void main(String[] args)
     {
