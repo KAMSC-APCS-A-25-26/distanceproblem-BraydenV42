@@ -76,7 +76,7 @@ public class Main
             x = Integer.parseInt(x2) - Integer.parseInt(x1);
             y = Integer.parseInt(y2) - Integer.parseInt(y1);
             distance = Math.sqrt( Math.pow(x, 2) + Math.pow(y, 2));
-            System.out.println("Found distance " + distance + ".");
+            System.out.println("Your output was:\n " + distance);
         }
     }
 }
