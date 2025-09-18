@@ -28,7 +28,7 @@
 
 import java.util.Scanner;
 
-public class Main
+public class DistanceMultiple
 {
     public static void main(String[] args)
     {
@@ -41,7 +41,6 @@ public class Main
         double distances;
 
         // Prompt for number of runs
-        System.out.println("How many times do you want to run this program?");
         numRuns = scanner.nextInt();
 
         // Set up a loop
